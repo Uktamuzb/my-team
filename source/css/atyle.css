@@ -84,11 +84,25 @@ body {
           align-items: center;
 }
 
+.main .section__container .heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url(../images/left.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+
 .main .section__container .heading::after {
   content: "";
   position: absolute;
-  background: url(../images/left.png);
-  background-color: white;
+  bottom: -135px;
+  right: 300px;
+  background: url(../images/bottom.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 380px;
 }
 
 .main .section__container .heading h2 {
