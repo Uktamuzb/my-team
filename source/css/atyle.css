@@ -18,7 +18,7 @@ body {
 
 .header {
   background-color: #004047;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .header .header__container {
@@ -68,24 +68,20 @@ body {
 }
 
 .main {
-  padding: 50px 0;
   background-color: #004047;
 }
 
-.main .section {
-  padding: 90px 0;
-}
-
 .main .section__container {
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .section__container .heading::after {

@@ -82,7 +82,7 @@ body {
     // width: 100%;left: 0;
     // top: 0;
     background-color: $Deep-Jungle-Green;
-    padding: 40px 0;
+    padding: 30px 0;
 
     .header__container {
         display: flex;
@@ -119,16 +119,13 @@ body {
 }
 
 .main {
-    padding: 50px 0;
     background-color: $Deep-Jungle-Green;
    
-    .section {
-        padding: 90px 0;
-    }
     .section__container {
+        height: 90vh;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
 
         .heading::after {
             content: "";
