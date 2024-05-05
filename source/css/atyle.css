@@ -6,8 +6,7 @@ body {
 *, *::after, *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -20,47 +19,31 @@ body {
   background-color: #004047;
   padding: 30px 0;
 }
-
 .header .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header .header__container nav {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
-
 .header .header__container nav .nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
-
 .header .header__container nav .nav__list .nav__list__item {
   margin-left: 15px;
 }
-
 .header .header__container nav .nav__list .nav__list__item a {
-  color: #ffff;
+  color: white;
   text-decoration: none;
 }
-
 .header .header__container .buttons button {
   padding: 10px 33px;
-  border: 2px solid #ffff;
+  border: 2px solid white;
   background: transparent;
-  color: #ffff;
+  color: white;
   font-size: 18px;
   font-weight: 600;
   font-family: "Livvic", sans-serif;
@@ -70,20 +53,12 @@ body {
 .main {
   background-color: #004047;
 }
-
 .main .section__container {
   height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .main .section__container .heading::before {
   content: "";
   position: absolute;
@@ -93,7 +68,6 @@ body {
   height: 200px;
   width: 200px;
 }
-
 .main .section__container .heading::after {
   content: "";
   position: absolute;
@@ -104,74 +78,50 @@ body {
   height: 200px;
   width: 380px;
 }
-
 .main .section__container .heading h2 {
   font-size: 100px;
-  color: #ffff;
+  color: white;
   font-weight: bold;
   line-height: 100px;
 }
-
 .main .section__container .heading h2 span {
   color: #f67e7e;
 }
-
 .main .section__container .heading__text p {
   font-size: 18px;
   line-height: 28px;
   font-weight: bold;
   font-family: "Livvic", sans-serif;
-  color: #ffff;
+  color: white;
   max-width: 500px;
 }
-
 .main .section__page2 {
   background-color: #002529;
   padding: 90px 0;
 }
-
 .main .section__page2 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .main .section__page2 .heading h2 {
   max-width: 445px;
-  color: #ffff;
+  color: white;
   font-size: 48px;
   font-weight: bold;
   line-height: 48px;
 }
-
 .main .section__page2 .box__container {
   max-width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   gap: 3rem;
 }
-
 .main .section__page2 .box__container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
-
 .main .section__page2 .box__container .box .box__inner span {
   color: #f67e7e;
   font-size: 18px;
@@ -179,8 +129,6 @@ body {
   line-height: 28px;
   margin-bottom: 30px;
 }
-
 .main .section__page2 .box__container .box .box__inner p {
-  color: #ffff;
-}
-/*# sourceMappingURL=atyle.css.map */
+  color: white;
+}/*# sourceMappingURL=atyle.css.map */
