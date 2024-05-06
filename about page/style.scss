@@ -1,0 +1,28 @@
+$body-font-famil: "Livvic",
+sans-serif;
+$Midnight-Green: #014e56;
+$Light-Color: #f67e7e;
+$White: #ffff;
+$black:#0000;
+$Raptuer-BLue: #79c8c7;
+$Police-Blue: #2c6269;
+$Deep-Jungle-Green: #004047;
+$Sacramento-State-Green: #012f34;
+$Dark-Green: #002529;
+
+.directors__section {
+    background-color: $Deep-Jungle-Green;
+    color: $White;
+}
+.directors__box{
+    background-color: $Dark-Green;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 40px 10px;
+    margin: 10px;
+}
+
+.diroctrs__title{
+    text-align: center;
+}
