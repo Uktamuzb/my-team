@@ -7,7 +7,7 @@ $Midnight-Green: #014e56;
 $Midnight-Green: #014e56;
 $Light-Color: #f67e7e;
 $White: #ffff;
-$black:#0000;
+$black:#000;
 $Raptuer-BLue: #79c8c7;
 $Police-Blue: #2c6269;
 $Deep-Jungle-Green: #004047;
@@ -58,6 +58,15 @@ $button-border: 2px;
 $button-border-solid: solid;
 $button-border-paint: $White;
 $button-b-r: 40px;
+
+$padding-x: 0 50px;
+$padding-y: 50px 0;
+
+$margin-x-30px: 0 30px;
+$margin-y-30px: 30px 0;
+
+$transzition: all .4s;
+$cursor: pointer;
 // =========HEADINNGS================
 
 // =========GENERAL STYLES=========
@@ -74,13 +83,29 @@ body {
     max-width: 1110px;
     padding: 0 20px;
 }
+.btn {
+            padding: $button-p-x $button-p-y;
+            border: $button-border $button-border-solid $button-border-paint;
+            background: transparent;
+            color: $White;
+            font-size: $button-headings-font-size;
+            font-weight: $button-headings-font-weight;
+            font-family: $button-headings-font-family;
+            border-radius: $button-b-r;
+            transition: $transzition;
+            cursor: $cursor;
+}
+.btn:hover {
+    background-color: $White;
+}
 
 // =========GENERAL STYLES=========
 
+// =======HEADER QISMI BOSHLANISHI======
 .header {
-    // position: fixed;
-    // width: 100%;left: 0;
-    // top: 0;
+    position: fixed;
+    width: 100%;left: 0;
+    top: 0;
     background-color: $Deep-Jungle-Green;
     padding: 30px 0;
 
@@ -106,6 +131,7 @@ body {
             }
         }
         .buttons button {
+            cursor: $cursor;
             padding: $button-p-x $button-p-y;
             border: $button-border $button-border-solid $button-border-paint;
             background: transparent;
@@ -114,9 +140,18 @@ body {
             font-weight: $button-headings-font-weight;
             font-family: $button-headings-font-family;
             border-radius: $button-b-r;
+            transition: $transzition;
+        }
+        button:hover {
+            background-color: $White;
+            color: $black;
         }
     }
 }
+// =======HEADER QISMI TUGASHI==========
+
+
+// ===========MAIN QISMI BOSHLANISHI ===========
 
 .main {
     background-color: $Deep-Jungle-Green;
@@ -126,7 +161,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         .heading::before {
             content: "";
             position: absolute;
@@ -139,8 +173,8 @@ body {
         .heading::after {
             content: "";
             position: absolute;
-            bottom: -135px;
-            right: 300px;
+            bottom: -29px;
+            right: 0;
             background: url(../images/bottom.png);
             background-repeat: no-repeat;
             height: 200px;
@@ -164,26 +198,9 @@ body {
             color: $White;
             max-width: 500px;
         }
-    }
-    .section__page2 {
-        background-color: $Dark-Green;
-        padding: 90px 0;
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-        
-        .heading h2 {
-            max-width: 445px;
-            color: $White;
-            font-size: $h2--headings-font-size;
-            font-weight: $h2--headings-font-weight;
-            line-height: $h2--headings-line-height;
-        }
         .box__container  {
-            max-width: 500px; 
+            padding: $padding-y;
+            max-width: 520px; 
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -201,7 +218,6 @@ body {
                     margin-bottom: 30px;
                 }
                 p {
-                //  margin-top: 30px;/
                  color: $White;
      
                 }
@@ -210,4 +226,147 @@ body {
         } 
     }
 
+
+    .section__page2 {
+        background-color: $Dark-Green;
+        padding: 30px 0;
+        height: 80vh;
+        .inner__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .heading h2 {
+                max-width: 445px;
+                color: $White;
+                font-size: $h2--headings-font-size;
+                font-weight: $h2--headings-font-weight;
+                line-height: $h2--headings-line-height;
+            }
+            .heading h2::before {
+                content: '';
+                width: 20px;
+                height: 2px;
+                background: $Light-Color;
+            }
+        }
+        .box__container  {
+            padding: $padding-y;
+            max-width: 520px; 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 3rem;
+
+            .box {
+                display: flex;
+                gap: 1rem;
+               .box__inner {
+                span {
+                    color: $Light-Color;
+                    font-size: $body-1-headings-font-size;
+                    font-weight: $body-1-headings-font-weight;
+                    line-height: $body-1-headings-line-height;
+                    margin-bottom: 30px;
+                }
+                p {
+                 color: $White;
+     
+                }
+               }
+             }
+        } 
+        
+    }
+    .section__manage3 {
+        margin: 50px 0;
+        padding: 0 $padding-x;
+
+        .inner__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
+            .heading h2 {
+                padding: $padding-y;
+                color: $White;
+                font-size: $h2--headings-font-size;
+                font-weight: $h2--headings-font-weight;
+                line-height:  $h2--headings-line-height;
+            }
+
+            .box__container {
+                color: $White;
+                display: grid;
+                text-align: center;
+                gap: 1rem;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                
+
+                .box .box__inner {
+                    margin-bottom: 20px;
+                    p {
+                        margin-bottom: 30px;
+                    }
+                    .text__user {
+                        h3 {
+                            color: lightcoral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section__footer {
+        background-color: $Light-Color;
+        // margin: $margin-y-30px;
+        padding: $padding-y;
+        .section__content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            p {
+                font-size: $h2--headings-font-size;
+                font-weight: $h2--headings-font-weight;
+                line-height: $h2--headings-line-height;
+            }
+            .btn {
+              border: 2px solid black;
+              color: $black;
+
+            }
+        }
+    }
 }
+
+// ===========MAIN QISMI TUGASHI ===========
+
+// ========FOOTER QISMI BOSHLANISHI=========
+
+footer {
+    padding: $padding-y;
+    background-color: #000;
+    color: $White;
+    .box__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .box {
+            nav .nav__list {
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: $White;
+                    font-family: $body-1-headings-font-family;
+                    font-size: $body-1-headings-font-size;
+                }
+            }
+        }
+    }
+}
+
+// ========FOOTER QISMI TUGASHI===-=========
