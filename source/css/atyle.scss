@@ -2,7 +2,8 @@
 
 
 // =========COLORS================
-$body-font-famil: "Livvic",sans-serif;
+$body-font-famil: "Livvic",
+sans-serif;
 $Midnight-Green: #014e56;
 $Light-Color: #f67e7e;
 $White: #ffff;
@@ -16,37 +17,44 @@ $Dark-Green: #002529;
 
 
 // =========HEADINGS================
-$h1-large-headings-font-family: "Livvic",sans-serif;
+$h1-large-headings-font-family: "Livvic",
+sans-serif;
 $h1-large-headings-font-size: 100px;
 $h1-large-headings-font-weight: bold;
 $h1-large-headings-line-height: 100px;
 
-$h1-small-headings-font-family: "Livvic",sans-serif;
+$h1-small-headings-font-family: "Livvic",
+sans-serif;
 $h1-small-headings-font-size: 64px;
 $h1-small-headings-font-weight: bold;
 $h1-small-headings-line-height: 56px;
 
-$h2--headings-font-family: "Livvic",sans-serif;
+$h2--headings-font-family: "Livvic",
+sans-serif;
 $h2--headings-font-size: 48px;
 $h2--headings-font-weight: bold;
 $h2--headings-line-height: 48px;
 
-$h3--headings-font-family: "Livvic",sans-serif;
+$h3--headings-font-family: "Livvic",
+sans-serif;
 $h3--headings-font-size: 18px;
 $h3--headings-font-weight: bold;
 $h3--headings-line-height: 28px;
 
-$body-1-headings-font-family: "Livvic",sans-serif;
+$body-1-headings-font-family: "Livvic",
+sans-serif;
 $body-1-headings-font-weight: bold;
 $body-1-headings-font-size: 18px;
 $body-1-headings-line-height: 28px;
 
-$body-2-headings-font-family: "Livvic",sans-serif;
+$body-2-headings-font-family: "Livvic",
+sans-serif;
 $body-2-headings-font-weight: bold;
 $body-2-headings-font-size: 15px;
 $body-2-headings-line-height: 25px;
 
-$button-headings-font-family: "Livvic",sans-serif;
+$button-headings-font-family: "Livvic",
+sans-serif;
 $button-headings-font-weight: 600;
 $button-headings-font-size: 18px;
 $button-headings-line-height: 28px;
@@ -72,28 +80,34 @@ $cursor: pointer;
 body {
     font-family: $body-font-famil;
 }
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .container {
     margin: 0 auto;
     max-width: 1110px;
     padding: 0 20px;
 }
+
 .btn {
-            padding: $button-p-x $button-p-y;
-            border: $button-border $button-border-solid $button-border-paint;
-            background: transparent;
-            color: $White;
-            font-size: $button-headings-font-size;
-            font-weight: $button-headings-font-weight;
-            font-family: $button-headings-font-family;
-            border-radius: $button-b-r;
-            transition: $transzition;
-            cursor: $cursor;
+    padding: $button-p-x $button-p-y;
+    border: $button-border $button-border-solid $button-border-paint;
+    background: transparent;
+    color: $White;
+    font-size: $button-headings-font-size;
+    font-weight: $button-headings-font-weight;
+    font-family: $button-headings-font-family;
+    border-radius: $button-b-r;
+    transition: $transzition;
+    cursor: $cursor;
 }
+
 .btn:hover {
     background-color: $White;
 }
@@ -103,7 +117,8 @@ body {
 // =======HEADER QISMI BOSHLANISHI======
 .header {
     position: fixed;
-    width: 100%;left: 0;
+    width: 100%;
+    left: 0;
     top: 0;
     background-color: $Deep-Jungle-Green;
     padding: 30px 0;
@@ -116,19 +131,23 @@ body {
 
         nav {
             flex-grow: 1;
+
             // margin-left: 30px;
             .nav__list {
                 display: flex;
                 list-style: none;
+
                 .nav__list__item {
                     margin-left: 15px;
+
                     a {
                         color: $White;
                         text-decoration: none;
-                       }
+                    }
                 }
             }
         }
+
         .buttons button {
             cursor: $cursor;
             padding: $button-p-x $button-p-y;
@@ -141,12 +160,14 @@ body {
             border-radius: $button-b-r;
             transition: $transzition;
         }
+
         button:hover {
             background-color: $White;
             color: $black;
         }
     }
 }
+
 // =======HEADER QISMI TUGASHI==========
 
 
@@ -154,12 +175,13 @@ body {
 
 .main {
     background-color: $Deep-Jungle-Green;
-   
+
     .section__container {
         height: 90vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .heading::before {
             content: "";
             position: absolute;
@@ -169,6 +191,7 @@ body {
             height: 200px;
             width: 200px;
         }
+
         .heading::after {
             content: "";
             position: absolute;
@@ -179,6 +202,7 @@ body {
             height: 200px;
             width: 380px;
         }
+
         .heading h2 {
             font-size: $h1-large-headings-font-size;
             color: $White;
@@ -189,7 +213,8 @@ body {
                 color: $Light-Color;
             }
         }
-        .heading__text p{
+
+        .heading__text p {
             font-size: $body-1-headings-font-size;
             line-height: $body-1-headings-line-height;
             font-weight: $body-1-headings-font-weight;
@@ -197,9 +222,10 @@ body {
             color: $White;
             max-width: 500px;
         }
-        .box__container  {
+
+        .box__container {
             padding: $padding-y;
-            max-width: 520px; 
+            max-width: 520px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -208,21 +234,23 @@ body {
             .box {
                 display: flex;
                 gap: 1rem;
-               .box__inner {
-                span {
-                    color: $Light-Color;
-                    font-size: $body-1-headings-font-size;
-                    font-weight: $body-1-headings-font-weight;
-                    line-height: $body-1-headings-line-height;
-                    margin-bottom: 30px;
+
+                .box__inner {
+                    span {
+                        color: $Light-Color;
+                        font-size: $body-1-headings-font-size;
+                        font-weight: $body-1-headings-font-weight;
+                        line-height: $body-1-headings-line-height;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        color: $White;
+
+                    }
                 }
-                p {
-                 color: $White;
-     
-                }
-               }
-             }
-        } 
+            }
+        }
     }
 
 
@@ -230,10 +258,12 @@ body {
         background-color: $Dark-Green;
         padding: 30px 0;
         height: 80vh;
+
         .inner__container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             .heading h2 {
                 max-width: 445px;
                 color: $White;
@@ -241,6 +271,7 @@ body {
                 font-weight: $h2--headings-font-weight;
                 line-height: $h2--headings-line-height;
             }
+
             .heading h2::before {
                 content: '';
                 width: 20px;
@@ -248,9 +279,10 @@ body {
                 background: $Light-Color;
             }
         }
-        .box__container  {
+
+        .box__container {
             padding: $padding-y;
-            max-width: 520px; 
+            max-width: 520px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -259,23 +291,26 @@ body {
             .box {
                 display: flex;
                 gap: 1rem;
-               .box__inner {
-                span {
-                    color: $Light-Color;
-                    font-size: $body-1-headings-font-size;
-                    font-weight: $body-1-headings-font-weight;
-                    line-height: $body-1-headings-line-height;
-                    margin-bottom: 30px;
+
+                .box__inner {
+                    span {
+                        color: $Light-Color;
+                        font-size: $body-1-headings-font-size;
+                        font-weight: $body-1-headings-font-weight;
+                        line-height: $body-1-headings-line-height;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        color: $White;
+
+                    }
                 }
-                p {
-                 color: $White;
-     
-                }
-               }
-             }
-        } 
-        
+            }
+        }
+
     }
+
     .section__manage3 {
         margin: 50px 0;
         padding: 0 $padding-x;
@@ -285,12 +320,13 @@ body {
             justify-content: space-between;
             flex-direction: column;
             text-align: center;
+
             .heading h2 {
                 padding: $padding-y;
                 color: $White;
                 font-size: $h2--headings-font-size;
                 font-weight: $h2--headings-font-weight;
-                line-height:  $h2--headings-line-height;
+                line-height: $h2--headings-line-height;
             }
 
             .box__container {
@@ -299,13 +335,15 @@ body {
                 text-align: center;
                 gap: 1rem;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                
+
 
                 .box .box__inner {
                     margin-bottom: 20px;
+
                     p {
                         margin-bottom: 30px;
                     }
+
                     .text__user {
                         h3 {
                             color: lightcoral;
@@ -320,18 +358,21 @@ body {
         background-color: $Light-Color;
         // margin: $margin-y-30px;
         padding: $padding-y;
+
         .section__content {
             display: flex;
             justify-content: space-around;
             align-items: center;
+
             p {
                 font-size: $h2--headings-font-size;
                 font-weight: $h2--headings-font-weight;
                 line-height: $h2--headings-line-height;
             }
+
             .btn {
-              border: 2px solid black;
-              color: $black;
+                border: 2px solid black;
+                color: $black;
 
             }
         }
@@ -346,17 +387,20 @@ footer {
     padding: $padding-y;
     background-color: #000;
     color: $White;
+
     .box__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
         .box {
             nav .nav__list {
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
                 list-style: none;
+
                 a {
                     text-decoration: none;
                     color: $White;
