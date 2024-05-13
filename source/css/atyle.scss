@@ -165,7 +165,20 @@ body {
             background-color: $White;
             color: $black;
         }
+
     }
+}
+.menu{
+    display: none;
+}
+
+.menu__page{
+    margin-top: 10%;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    background-color: white;
 }
 
 // =======HEADER QISMI TUGASHI==========

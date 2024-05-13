@@ -5,6 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="../source/css/atyle.css")
+        link(rel="stylesheet", href="../source/css/media.css")
         title My Team 
     body 
     //- ------///HEADER  QISMI BOSHLANISHI========= 
@@ -17,15 +18,28 @@ html(lang="en")
                     li.nav__list__item
                         a(href="/") home
                     li.nav__list__item
-                        a(href="../about/index.html") about
+                        a(href="./about/index.html") about
                     li.nav__list__item
-                        a(href="../contact/index.html") contact
+                        a(href="./contact/index.html") contact
             .buttons
-                button contact us 
+                button contact us
+                
+            .menu
+                img(src="./source/images/menu.png", alt="")
+
     //-  ------///HEADER QISMI TUGASHI =========
 
     //- ------///MAIN  QISMI BOSHLANISHI=========                            
     main.main 
+        .menu__page 
+            ul.nav__list 
+                li.nav__list__item
+                    a(href="/") home
+                li.nav__list__item
+                    a(href="./about/index.html") about
+                li.nav__list__item
+                    a(href="./contact/index.html") contact
+
         section.section     
             .section__container.container 
                 .heading 

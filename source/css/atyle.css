@@ -79,6 +79,19 @@ body {
   color: #000;
 }
 
+.menu {
+  display: none;
+}
+
+.menu__page {
+  margin-top: 10%;
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  background-color: white;
+}
+
 .main {
   background-color: #004047;
 }
